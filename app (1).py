@@ -1,9 +1,19 @@
 import streamlit as st
+try:
+    import transformers
+    import torch
+    from transformers import pipeline
+    ai_enabled = True
+except ImportError as e:
+    ai_enabled = False
+    st.warning("⚠️ AI features are not available. Please install required libraries: pip install transformers torch")
+
 import random
 import logging  # For better error tracking
 import pandas as pd  # For chart data
 from datetime import datetime  # For progress tracking
 import wikimedia  # Import our Wikimedia module
+
 
 # Set page config first before any other st commands
 st.set_page_config(page_title="WikiFit", page_icon="💪")
