@@ -29,6 +29,7 @@
 
 ## Live Application
 Github deployed:https://wikifit-rrkhnkwlwqucpie66u9pfy.streamlit.app/
+
 hugging face : https://huggingface.co/spaces/KarthikGarlapati/wikifit
 
 ## Data Sources
